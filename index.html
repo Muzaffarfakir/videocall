@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>VideoChating</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    video{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: grid;
+      grid-template-columns: repeat (auto-fill , 250px);
+      grid-auto-rows: 250px;
+      margin-top: 9px;
+    }
+    button{
+      
+      display: flex;
+      margin:auto;
+      margin-top: 10px;
+      
+    }
+  
+    #localPeerId{
+      width: 100%;
+      object-fit: cover;
+    }
+    #remotePeerId{
+      width: 100%;
+      margin-top: 10px;
+    }
+    
+    
+      
+      
+      
+    
+      
+   
+    
+      
+   
+  </style>
+</head>
+
+<body>
+  <input type="text"  id="localPeerId" readonly>
+  <input type="text" id="remotePeerId">
+  <p>Online People ID :-<span id="Online"></span> </p>
+  <button id="btn">Call</button>
+ 
+ 
+  <video id="localVideo" autoplay></video>
+  <video id="RemoteVideo" autoplay></video>
+ 
+  <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+  <!-- Project -->
+  <script src="./main.js"></script>
+</body>
+
+</html>
